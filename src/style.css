@@ -1,0 +1,22 @@
+@import "tailwindcss";
+html,
+body{
+  font-size: 1vw;
+  /* aspect-ratio: 1920/1080; */
+  overflow: hidden;
+  width: 100vw;
+    margin: 0;
+  padding: 0;
+}
+
+.v-md-editor {
+  background-color: #ffffff !important;
+  flood-color: #000000;
+color: #000;
+}
+
+/* 改工具栏按钮颜色 */
+.v-md-editor .v-md-editor-toolbar-item {
+  color: #ff4d4f !important;
+}
+
