@@ -16,6 +16,7 @@ export default defineConfig(
             process.cwd()
         )
         return {
+            base: env.VITE_APP_BASE,
             plugins: [
                 vue(),
                 tailwindcss(),
