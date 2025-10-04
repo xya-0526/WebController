@@ -17,6 +17,11 @@ request.interceptors.request.use(
         return config
     },
     (error) => {
+        console.log(
+            '🔥 当前环境变量：',
+            import.meta.env
+                .VITE_API_BASE
+        )
         throw new AxiosError(error)
     }
 )
