@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .js,.ts,.vue",
     "fix": "eslint . --ext .js,.ts,.vue --fix",
     "format": "prettier --write \"**/*.{js,ts,vue,html,css,json}\"",
-     "deploy": "gh-pages -d dist"
+     "deploy": "gh-pages -d dist -f"
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.18",
