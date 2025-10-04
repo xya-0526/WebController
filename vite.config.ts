@@ -42,8 +42,14 @@ export default defineConfig(
                 proxy: {
                     '/api': {
                         target: env.VITE_API_BASE_URL, // 后端服务器地址
-                        changeOrigin: true // 允许跨域
-                        // rewrite: (path) => path.replace(/^\/api/, '') // 重写路径
+                        changeOrigin: true, // 允许跨域
+                        rewrite: (
+                            path
+                        ) =>
+                            path.replace(
+                                /^\/api/,
+                                ''
+                            ) // 重写路径
                     }
                 }
             },
